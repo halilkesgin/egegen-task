@@ -1,31 +1,89 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"aria-label="Slide 3"></button>
+<div id="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <div class="overlay"></div>
+            <img src="{{ asset('img/slider-1.svg') }}" alt="Slide 1">
+            <div class="slide-title">
+                <div class="slider-title">
+                    MODERN TASARIM, GÖZ ALICI GÜZELLİK
+                </div>
+                <div class="slider-description">
+                    POSEIDON SERİSİ
+                </div>
+                <div class="slider-content">
+                    Lorem ipsum dolor sit amet consectetur. Nisi sed viverra sem pellentesque in sociis ultrices. Tempor
+                    aliquam tincidunt in pretium mattis aliquam sit id at. Congue pellentesque consectetur id sit a
+                    malesuada sed. Felis cras aliquam donec egestas.
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="overlay"></div>
+            <img src="{{ asset('img/slider-1.svg') }}" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <div class="overlay"></div>
+            <img src="{{ asset('img/slider-1.svg') }}" alt="Slide 1">
+        </div>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{{ asset('img/slider-1.svg') }}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('img/slider-1.svg') }}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('img/slider-1.svg') }}" class="d-block w-100" alt="...">
-        </div>
+
+    <div class="slider-controls">
+        <button class="control-btn" onclick="prevSlide()">
+            <img src="{{ asset('img/nav-arrow-left.svg') }}">
+        </button>
+        <button class="control-btn" onclick="nextSlide()">
+            <img src="{{ asset('img/nav-arrow-right.svg') }}">
+        </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+
+    <div class="status-bar" id="status-bar">
+    </div>
 </div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const statusBar = document.getElementById('status-bar');
+
+    function showSlide(index) {
+        if (index < 0) {
+            currentSlide = slides.length - 1;
+        } else if (index >= slides.length) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
+
+        const translateValue = -currentSlide * 100 + '%';
+        document.querySelector('.slider').style.transform = 'translateX(' + translateValue + ')';
+
+        const dots = document.querySelectorAll('.status-dot');
+        dots.forEach((dot, index) => {
+            if (index === currentSlide) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    setInterval(nextSlide, 3000);
+
+    slides.forEach((slide, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('status-dot');
+        dot.addEventListener('click', () => showSlide(index));
+        statusBar.appendChild(dot);
+    });
+
+    const initialDot = document.querySelector('.status-dot');
+    initialDot.classList.add('active');
+</script>

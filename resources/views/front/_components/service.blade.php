@@ -17,6 +17,7 @@
                         <div class="d-flex align-items-center gap-2 service-card-container">
                             <div class="card bg-dark service-card"
                                 style="max-height: 470px; max-width: 350px; margin-top:1rem;">
+                                <div class="overlay"></div>
                                 <img src="{{ asset('img/card-1.svg') }}" class="card-img card-dark" />
                                 <div class="card-img-overlay card-img-center">
                                     <img src="{{ asset('img/pure-wash.svg') }}" class="card-img" />
@@ -24,6 +25,7 @@
                             </div>
                             <div class="card bg-dark service-card"
                                 style="max-height: 470px; max-width: 350px; margin-top:1rem;">
+                                <div class="overlay"></div>
                                 <img src="{{ asset('img/service-2.svg') }}" class="card-img card-dark" />
                                 <div class="card-img-overlay card-img-center">
                                     <img src="{{ asset('img/hygiene.svg') }}" class="card-img" />
@@ -31,6 +33,7 @@
                             </div>
                             <div class="card bg-dark service-card"
                                 style="max-height: 470px; max-width: 350px; margin-top:1rem;">
+                                <div class="overlay"></div>
                                 <img src="{{ asset('img/service-3.svg') }}" class="card-img card-dark" />
                                 <div class="card-img-overlay card-img-center">
                                     <img src="{{ asset('img/easy-wash.svg') }}" class="card-img" />
@@ -40,9 +43,8 @@
 
                     </div>
                 </div>
-
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 mt-2">
                 <div class="card bg-dark text-white">
                     <img src="{{ asset('img/card-4.svg') }}" class="card-img" alt="...">
                     <div class="card-bottom">

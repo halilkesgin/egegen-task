@@ -1,131 +1,115 @@
-<style>
-    .bg-left-half {
-        position: relative;
-    }
+<div class="testimonial-slider">
+    <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-title">
+                        <i class="bi bi-quote display-2"></i>
+                        <h2 class="fw-bold display-6">What our customers say</h2>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="col-md-8">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="{{ asset('img/item-1.svg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
 
-    .bg-left-half:before {
-        position: absolute;
-        width: 50%;
-        height: 100%;
-        z-index: -1;
-        content: "";
-        left: 0;
-        top: 0;
-        background-color: #f8f9fa;
-    }
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="{{ asset('img/item-1.svg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
 
-    .media-29101 img {
-        margin-bottom: 20px;
-    }
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="{{ asset('img/item-1.svg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
 
-    .media-29101 h3 {
-        font-size: 18px;
-        font-weight: 900 !important;
-    }
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="{{ asset('img/item-1.svg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
 
-    .media-29101 h3 a {
-        color: #6c757d;
-    }
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="{{ asset('img/item-1.svg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
 
-    .owl-2-style .owl-nav {
-        display: none;
-    }
-
-    .owl-2-style .owl-dots {
-        text-align: center;
-        position: relative;
-        bottom: -30px;
-    }
-
-    .owl-2-style .owl-dots .owl-dot {
-        display: inline-block;
-    }
-
-    .owl-2-style .owl-dots .owl-dot span {
-        display: inline-block;
-        width: 15px;
-        height: 3px;
-        border-radius: 0px;
-        background: #cccccc;
-        -webkit-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-        -o-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-        transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-        margin: 3px;
-    }
-
-    .owl-2-style .owl-dots .owl-dot.active span {
-        background: #007bff;
-    }
-
-    .owl-2-style .owl-dots .owl-dot:active,
-    .owl-2-style .owl-dots .owl-dot:focus {
-        outline: none;
-    }
-</style>
-
-<div class="site-section bg-left-half mb-5">
-    <div class="container owl-2-style">
-        <h2 class="text-primary py-5 ">Our Products</h2>
-        <div class="owl-carousel owl-2">
-            <div class="media-29101">
-                <img src="{{ asset('img/item-1.svg') }}" class="d-block w-100" alt="...">
-
-                <h3><a href="#">Consectetur Adipisicing Elit</a></h3>
-            </div>
-            <div class="media-29101">
-                <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Beatae Doloribu</a></h3>
-            </div>
-            <div class="media-29101">
-                <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Accusantium Eius Soluta</a></h3>
-            </div>
-            <div class="media-29101">
-                <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Consectetur Adipisicing Elit</a></h3>
-            </div>
-            <div class="media-29101">
-                <a href="#"><img src="images/img_5.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Beatae Doloribu</a></h3>
-            </div>
-            <div class="media-29101">
-                <a href="#"><img src="images/img_6.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Accusantium Eius Soluta</a></h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="{{ asset('img/item-1.svg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
 </div>
-<script>
-    $(function() {
 
-        if ($('.owl-2').length > 0) {
-            $('.owl-2').owlCarousel({
-                center: false,
-                items: 1,
-                loop: true,
-                stagePadding: 0,
-                margin: 20,
-                smartSpeed: 1000,
-                autoplay: true,
-                nav: true,
-                dots: true,
-                pauseOnHover: false,
-                responsive: {
-                    600: {
-                        margin: 20,
-                        nav: true,
-                        items: 2
-                    },
-                    1000: {
-                        margin: 20,
-                        stagePadding: 0,
-                        nav: true,
-                        items: 3
-                    }
+
+<script>
+    $(document).ready(function() {
+        var multipleCardCarousel = document.querySelector(
+            "#carouselExampleControls"
+        );
+        if (window.matchMedia("(min-width: 576px)").matches) {
+            var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+                interval: false,
+                wrap: false
+            });
+            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+            var cardWidth = $(".carousel-item").width();
+            var scrollPosition = 0;
+            $("#carouselExampleControls .carousel-control-next").on("click", function() {
+                if (scrollPosition < carouselWidth - cardWidth * 3) {
+                    scrollPosition += cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate({
+                            scrollLeft: scrollPosition
+                        },
+                        600
+                    );
                 }
             });
+            $("#carouselExampleControls .carousel-control-prev").on("click", function() {
+                if (scrollPosition > 1) {
+                    scrollPosition -= cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate({
+                            scrollLeft: scrollPosition
+                        },
+                        600
+                    );
+                }
+            });
+        } else {
+            $(multipleCardCarousel).addClass("slide");
         }
-
-    })
+    });
 </script>

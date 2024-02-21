@@ -49,6 +49,7 @@
             <li class="footer-menu-item">Logo ve Kurumsa Görseller</li>
         </ul>
     </div>
+    <div class="seperator" />
     <div class="footer-copyright">
         <h1 class="footer-copyright-left">
             <div class="footer-copyright-title">

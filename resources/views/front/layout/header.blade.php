@@ -13,7 +13,6 @@
         <img onclick="document.body.classList.toggle('open')" class="burger" src="{{ asset('img/burger.svg') }}" />
     </div>
 </nav>
-
 <script>
     const toggleMenu = () => document.body.classList.toggle("open");
 </script>
