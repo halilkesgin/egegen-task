@@ -15,11 +15,13 @@
                     <div class="banner-title">
                         ÇAĞRI MERKEZİ
                     </div>
+                    <div class="seperator-2"></div>
                     <div class="d-flex flex-column w-100">
-                        <div class="d-flex align-items-center gap-2">
+                        <div class="d-flex align-items-center gap-1">
                             <div class="banner-number">
                                 444 0
                             </div>
+
                             <div class="d-flex flex-column banner-mini">
                                 <div>
                                     322
@@ -29,9 +31,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center gap-2">
+                        <div class="d-flex  gap-1">
                             <div class="banner-number">
-                                0850 800 0
+                                0850800
                             </div>
                             <div class="d-flex flex-column banner-mini">
                                 <div>
@@ -48,6 +50,7 @@
                     <div class="banner-title">
                         SOSYAL MEDYA
                     </div>
+                    <div class="seperator-2"></div>
                     <div class="d-flex flex-column w-100">
                         <div class="d-flex align-items-center gap-2">
                             <img src="{{ asset('img/facebook.svg') }}" />

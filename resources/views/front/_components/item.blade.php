@@ -1,5 +1,4 @@
 <div class="my-4">
-
     <div class="gray-box"></div>
     <div class="container-xxl ">
         <div class="owl-carousel" id="slider">

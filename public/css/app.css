@@ -22,7 +22,7 @@ body,
     content: "|";
     margin-left: 1rem;
     margin-right: 1rem;
-    color: #718096;
+    color: #fff;
 }
 
 .intro {
@@ -117,6 +117,10 @@ body,
     gap: 1rem !important;
 }
 
+.gap-1 {
+    gap: 0.5rem !important;
+}
+
 .gap-4 {
     gap: 2rem !important;
 }
@@ -162,7 +166,6 @@ body,
 .footer-link-list {
     display: flex;
     align-items: center;
-    gap: 2rem;
 }
 
 .footer-copyright-left {
@@ -321,6 +324,18 @@ a:is(:visited, :active) {
 
 @media (width <=1024px) {
 
+    .menu-divider::after {
+        display: none !important;
+    }
+
+    .footer-link-list {
+        gap: 1rem !important;
+    }
+
+    .footer-divider::after {
+        display: none !important;
+    }
+
     .gray-box {
         display: none !important;
     }
@@ -416,7 +431,7 @@ a:is(:visited, :active) {
     }
 
     .seperator {
-        background: #5C6467;
+        background: #000000;
         width: 100%;
         height: 1rem;
     }
@@ -488,11 +503,11 @@ a:is(:visited, :active) {
 }
 
 .slider-description {
-        font-size: 60px;
-        font-weight: 900;
-        line-height: 81px;
-        letter-spacing: 0em;
-        text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 81px;
+    letter-spacing: 0em;
+    text-align: center;
 }
 
 .slider-title {
@@ -513,6 +528,12 @@ a:is(:visited, :active) {
 
 body.open .menu-items {
     display: flex;
+}
+
+.seperator-2 {
+    width: 1px;
+    height: 100px;
+    background-color: #000;
 }
 
 .px-6 {
@@ -647,9 +668,6 @@ body.open .menu-items {
 .banner-number {
     font-size: 28px;
     font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .banner-mini {
@@ -658,8 +676,7 @@ body.open .menu-items {
 }
 
 .banner-address {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
     width: 45%;
 }
 
@@ -676,42 +693,42 @@ body.open .menu-items {
  }
 
  .slide {
-     min-width: 100%;
-     box-sizing: border-box;
-     position: relative;
-     text-align: center;
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
  }
 
  .overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
  }
 
  .slide img {
-     width: 100%;
-     height: auto;
-     margin: 0 auto;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
  }
 
  .slide-title {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
  }
 
  .slider-controls {
-     position: absolute;
-     top: 50%;
-     width: 100%;
-     display: flex;
-     justify-content: space-between;
-     transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
  }
 
  .control-btn {
@@ -729,26 +746,26 @@ body.open .menu-items {
 
 
  .status-bar {
-     width: 100%;
-     height: 20px;
-     position: absolute;
-     bottom: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  .status-dot {
-     width: 30px;
-     height: 5px;
-     margin: 0 5px;
+    width: 30px;
+    height: 5px;
+    margin: 0 5px;
     background-color: rgba(0, 0, 0, 0.5);
-     transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
  }
 
  .status-dot.active {
-     background-color: white;
-     width: 60px;
+    background-color: white;
+    width: 60px;
  }
 
 
@@ -865,4 +882,11 @@ body.open .menu-items {
 .my-4 {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
+}
+
+.footer-divider::after {
+    content: "•";
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #718096;
 }

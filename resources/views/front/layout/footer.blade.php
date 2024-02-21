@@ -60,11 +60,11 @@
                 kuruluşudur.
             </div>
         </h1>
-        <ul class="footer-link-list">
-            <li class="footer-link-list-item">Gizlilik Politikası</li>
-            <li class="footer-link-list-item">Kullanım Şartları</li>
-            <li class="footer-link-list-item">Bilgi Toplumu Hizmetleri</li>
-        </ul>
+        <div class="footer-link-list">
+            <div class="footer-link-list-item footer-divider">Gizlilik Politikası</div>
+            <div class="footer-link-list-item footer-divider">Kullanım Şartları</div>
+            <div class="footer-link-list-item ">Bilgi Toplumu Hizmetleri</div>
+        </div>
         <img src="{{ asset('img/egegen.svg') }}" />
     </div>
 </footer>
